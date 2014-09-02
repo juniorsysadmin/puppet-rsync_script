@@ -1,3 +1,3 @@
-# <%= @folder %>
-<%= @rsync_path -%> <% if rsync_options != '' -%><%= @rsync_options -%> <% end -%><%= @source_folder -%> <%= @ssh_user -%>@<%= @destination_server -%>:<%= @destination_folder -%>
+# <%= @source_folder %>
+<%= @rsync_path -%> <% if rsync_options != '' -%><%= @rsync_options -%> <% end -%><%= @source_folder -%> <%= @ssh_user -%>@<%= @destination_server -%>:<%= @destination_folder %>
 
