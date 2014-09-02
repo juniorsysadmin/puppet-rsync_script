@@ -6,7 +6,7 @@ class rsync_script (
   $hostname_options   = $rsync_script::params::hostname_options,
   $hostname_path      = $rsync_script::params::hostname_path,
   $rsync_options      = $rsync_script::params::rsync_options,
-  $rsync_script_path  = $rsync_script::params::rsync_path,
+  $rsync_path         = $rsync_script::params::rsync_path,
   $script_dir         = $rsync_script::params::script_dir,
   $script_file_group  = $rsync_script::params::script_file_group,
   $script_file_mode   = $rsync_script::params::script_file_mode,
