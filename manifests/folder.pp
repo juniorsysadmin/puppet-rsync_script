@@ -9,9 +9,10 @@ define rsync_script::folder (
   $ssh_user           = $rsync_script::ssh_user,
 ) {
 
+  $concat_name   = "rsync-${name}"
   $source_folder = $name
 
-  concat::fragment { $name:
+  concat::fragment { $concat_name:
     target  => "${script_dir}/${script_file_name}",
     content => template('rsync_script/rsync-script-fragment.erb'),
     order   => '10',
