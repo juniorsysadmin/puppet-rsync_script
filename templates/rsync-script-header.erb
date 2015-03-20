@@ -5,6 +5,6 @@
 # This script uses SSH keys for the destination user
 
 # Use of these shell variables is not required
-HOSTNAME=$(<%= @hostname_path -%><% if hostname_options != '' -%><%= @hostname_options -%> <% end -%>)
+HOSTNAME=$(<%= @hostname_path -%><% if @hostname_options != '' -%><%= @hostname_options -%> <% end -%>)
 TIMESTAMP=$(<%= @date_path -%> <%= @date_format -%>)
 
